@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      
+      /*
+       * Transitions between slides by using Animate.css
+       * Find interesting transition animations here!
+       * https://daneden.github.io/animate.css/
+       */  
+       
+      /* Navigating forwards transitions */
+  
+      /* Navigate to slide */
+	  .remark-visible.remark-navigating-backwards {
+      	animation: slideInLeft 0.5s forwards;
+	  }
+	  
+      /* Navigate from slide */
+      .remark-fading.remark-navigating-backwards {
+      	animation: slideOutRight 0.5s forwards;
+      }
+  
+      /* Navigating backwards transitions */
+  
+      /* Navigate to slide */ 
+      .remark-visible.remark-navigating-forwards {
+      	animation: slideInRight 0.5s forwards;
+      }
+  
+      /* Navigate from slide */ 
+	  .remark-fading.remark-navigating-forwards {
+      	animation: slideOutLeft 0.5s forwards;
+	  }
+    
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Title
+
+---
+
+# Agenda
+
+1. Introduction
+2. Deep-dive
+3. ...
+
+---
+
+# Introduction
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
