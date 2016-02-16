@@ -42,10 +42,15 @@
       }
   
       /* Navigate from slide */ 
-	  .remark-fading.remark-navigating-forwards {
-      	animation: slideOutLeft 0.5s forwards;
-	  }
+	    .remark-fading.remark-navigating-forwards {
+       	animation: slideOutLeft 0.5s forwards;
+	    }
     
+      /* disable transitions in presenter mode */
+      .remark-presenter-mode * {
+        animation: none !important;
+      }
+
     </style>
   </head>
   <body>
